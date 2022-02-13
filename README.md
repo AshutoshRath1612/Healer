@@ -1,4 +1,4 @@
-<p align='center'><img src='https://raw.githubusercontent.com/arpanaditya/Ment-Ally/main/Web-App/public/favicon.ico' width="150"alt="Ment-Ally Logo" ></p>
+<p align='center'><img src='https://github.com/kaal-coder/Healer/blob/main/Healer%20Logo.png' width="150"alt="Ment-Ally Logo" ></p>
 <h1 align='center'> MHealer</h1>
 <h2>The pandemic is chaotic no matter what and how much we are trying to deal with it. So we are providing a good project management website which provide you the current info regarding the Covid-19. </h2>
 <p align='justify'>
