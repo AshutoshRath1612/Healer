@@ -9,4 +9,6 @@ Currently The problem is that the pandemic is chaotic no matter what and how muc
 We are a group of very enthusiastic developers who are open to learning and experimenting with new techs. The thing which is common among us is that we love hackathons 🤩. In this hackathon we learnt how to use VS-Code Liveshare smoothly. We have created blogs and with the help of API we fetched data from our database. We also have learnt how to connect and configure DNS of any custom domain to firebase project which was something very new for us. 
 
 
+For contribution related discussion, join -  https://t.me/+ivIeWPQJk4ozMDI9
+
 <h3 align="center">Made with 💝 by Healer .</h3>
