@@ -38,7 +38,6 @@
             -moz-user-select: none;
             user-select: none;
         }
-        
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -53,13 +52,13 @@
 
 </head>
 
-<body>
+<body >
 
-    <main>
+    <main id="mainbody" class="fadebody">
         <div class="container py-4">
             <header class="pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1"><strong>current update</strong></span>
+                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1"><strong>Current Update</strong></span>
                 </a>
 
             </header>
@@ -69,15 +68,51 @@
                     <div class="row">
                         <div class="col stats ">
                             <h4>Active</h4>
-                            <h1 class="display-4">179838921</h1>
+                            <h1 class="display-4 " id="covidActive">--</h1>
                         </div>
                         <div class="col stats">
                             <h4>Recoverd</h4>
-                            <h1 class="display-4">1209312</h1>
+                            <h1 class="display-4" id="covidRecovered">--</h1>
                         </div>
                         <div class="col stats">
                             <h4>Deaths</h4>
-                            <h1 class="display-4">129831</h1>
+                            <h1 class="display-4" id="covidDeath">--</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <i class="fa-thin fa-mask-face"></i> <span class="fs-1"><strong>Country Update</strong></span>
+                </a>
+
+            </header>
+            <form>
+                <div class="col-auto d-flex m-3">
+                    <input type="text" class="form-control" id="inputCountry" placeholder="Search the Country">
+                    <div class="col-auto m-2">
+                      <button type="submit" class="btn btn-primary btn-lg " id="countrySearch">Search</button>
+                    </div>
+                  </div>
+            </form>
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col stats ">
+                            <h4>Active</h4>
+                            <h1 class="display-4 " id="covidcountryActive">--</h1>
+                        </div>
+                        <div class="col stats ">
+                            <h4>Cases</h4>
+                            <h1 class="display-4 " id="covidcountryCases">--</h1>
+                        </div>
+                        <div class="col stats">
+                            <h4>Recoverd</h4>
+                            <h1 class="display-4" id="covidcountryRecovered">--</h1>
+                        </div>
+                        <div class="col stats">
+                            <h4>Deaths</h4>
+                            <h1 class="display-4" id="covidcountryDeath">--</h1>
                         </div>
                     </div>
                 </div>
@@ -85,51 +120,8 @@
             <h1>NEWS</h1>
             <hr>
             <div class="row align-items-md-stretch">
-                <div class="card mb-3">
-                    <div class="row g-0" style="margin-top: 10px;">
-                        <div class="col-md-4">
-                            <img src="delhi.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3 class="card-title">New Delhi</h3>
-                                <p class="card-text">As many as 44,877 fresh COVID-19 cases were reported in the country, informed the Ministry of Health and Family Welfare on Sunday. With this, the country's active caseload currently stands at 5,37,045 which accounts for
-                                    1.26 per cent of total cases. The daily positivity rate in India has been recorded at 3.17 per cent and the weekly positivity rate at 4.46 per cent.</p>
-                                <p class="card-text" style="position: absolute; bottom: 0;margin-bottom: 10px;"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0" style="margin-top: 10px;">
-                        <div class="col-md-4">
-                            <img src="UP.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3 class="card-title">Some news</h3>
-                                <p class="card-text">In the past 24 hours, as many 10 fresh COVID-19 deaths were reported in Uttar Pradesh, taking the death toll in the state to 23,391. There are a total of 15,276 active COVID-19 cases in the state. The relaxation in the
-                                    night curfew comes a day after the Election Commission citing significant improvement in the COVID-19 situation and further relaxed pandemic-induced restrictions on the assembly poll campaign in five states, including
-                                    Uttar Pradesh.</p>
-                                <p class="card-text" style="position: absolute; bottom: 0;margin-bottom: 10px;"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0" style="margin-top: 10px;">
-                        <div class="col-md-4">
-                            <img src="new delhi.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3 class="card-title">Some news</h3>
-                                <p class="card-text">Delhi News Live Updates: Delhi logged 804 fresh Covid-19 cases and 12 deaths in the last 24 hours on Sunday. With a positivity rate of 1.50 per cent on Sunday, 1197 recovered from the virus. The active cases as of Sunday
-                                    evening stood at 3926. The city, on Saturday, recorded 920 Covid-19 cases and 13 deaths.</p>
-                                <p class="card-text" style="position: absolute; bottom: 0;margin-bottom: 10px;"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="news">
+
                 </div>
             </div>
 
@@ -142,5 +134,5 @@
 
 
 </body>
-
+<script src="indexx.js"></script>
 </html>
