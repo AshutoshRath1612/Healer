@@ -46,7 +46,7 @@ let btnSubmit = document.getElementById('countrySearch').addEventListener("click
 //news
 
 let newsHtml= "";
-let fetchnews = fetch('https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=cbfaea86242d454abe1b50fe91b58117')
+let fetchnews = fetch('https://saurav.tech/NewsAPI/top-headlines/category/health/in.json')
                 .then(res=> res.json()).then(data =>{
                     console.log(data);
                     data.articles.forEach((element,index) =>{
